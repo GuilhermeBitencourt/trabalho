@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 120vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #ffce51, #ff7253, #fd5754);
+    
+}
+#form {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 60px;
+    width: min-content;
+    color: #2b344b;
+}
+.title{
+    font-size: 1.8em; 
+    margin-bottom: 5%;
+}
+.input{
+    min-width: 250px;
+    border-radius: 22px;
+    border: 2px #6f7e8a solid;
+    padding: 5px;
+    margin: 0px 0px 12px -5px;
+}
+.input i {
+    font-size: 1.2em;
+    padding: 5px;
+    background: -webkit-linear-gradient(-45deg, #ffce51, #ff7253, #fd5754 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.input input{
+    width: 80%;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    color: #2b344b;
+    font-size: 11pt;
+}
+select{
+    border: none;
+    outline: none;
+    min-width: 200px;
+    border-radius: 22px;
+}
+.event-category{
+    width: 85%;
+}
+
+
+button{
+    margin-top: 5px;
+    min-width: 250px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #ffce51, #ff7253, #fd5754);
+    font-size: 1.2em;
+    color: #ffff;
+    outline: none;
+    cursor: pointer;
+
+}
+button:hover{
+    background: linear-gradient(-45deg, #eec04c, #ec7054, #ee5a57);
+    color: #2b344b;
+}
+
