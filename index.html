@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/0df49eb9ed.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="search.js"></script>
     <title>Formulario</title>
 </head>
 <body>
@@ -15,36 +16,40 @@
             <label for="Nome Completo">Nome</label>
             <div class="input">
                 <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                <input id="username" placeholder="Nome Completo" type="text">
+                <input id="username" placeholder="Nome Completo" type="text" required>
             </div>
 
             <label for="email">Email</label>
             <div class="input">
                 <i class="fa-regular fa-envelope"></i>
-                <input id="email" placeholder="Email" type="email">
+                <input id="email" placeholder="Email" type="email" required>
             </div>
-
+            
             <label for="categoria">Categoria</label>
             <div class="input">
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <select class="event-category">
-                    <option value="suport">Suporte</option>
-                    <option value="desenvolvimento">Desenvolvimento</option>
-                    <option value="financeiro">Financeiro</option>
-                </select>
+                <input type="text" id="searchInput" placeholder="Categoria">
+                <ul id="optionsList" class="options-list" class>
+                    <li><a href="#" class="no-underline" >Casa</a></li>
+                    <li><a href="#" class="no-underline" >Carro</a></li>
+                    <li><a href="#" class="no-underline" >Moto</a></li>
+                    <li><a href="#" class="no-underline" >Apartamento</a></li>
+                    <li><a href="#" class="no-underline" >Colégio</a></li>
+                    <li><a href="#" class="no-underline" >Sei lá</a></li>
+                </ul>
             </div>
 
             <label for="titulo">Título</label>
             <div class="input">
                 <i class="fa-regular fa-file"></i>
-                <input id="titulo" placeholder="Título" type="text" >
+                <input id="titulo" placeholder="Título" type="text" required>
             </div>
 
             <label for="descricao">Descrição</label>
             <div class="input">
 
                 <i class="fa-regular fa-comment"></i>
-                <input id="descricao" placeholder="Descrição" type="text">
+                <input id="descricao" placeholder="Descrição" type="text" required>
             </div> 
 
             <div id="btnEnviar">

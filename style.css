@@ -31,6 +31,7 @@ body{
     border: 2px #6f7e8a solid;
     padding: 5px;
     margin: 0px 0px 12px -5px;
+    display: flex;
 }
 .input i {
     font-size: 1.2em;
@@ -38,6 +39,7 @@ body{
     background: -webkit-linear-gradient(-45deg, #ffce51, #ff7253, #fd5754 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 
 }
 .input input{
@@ -47,6 +49,7 @@ body{
     font-family: 'Poppins', sans-serif;
     color: #2b344b;
     font-size: 11pt;
+    
 }
 select{
     border: none;
@@ -79,3 +82,46 @@ button:hover{
     color: #2b344b;
 }
 
+#optionsList {
+    
+    display: none;
+    position: absolute;
+    top: 340px;
+    left: 150;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    width: 250px;
+    max-height: 150px;
+    overflow-y: auto;
+    
+}
+
+.options-list li {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 22px;
+    transition: background-color 0.2s;
+}
+
+.options-list li:hover {
+    background-color: #f0f0f0;
+}
+#searchInput {
+    border: none;
+    outline: none;
+    min-width: 200px;
+    border-radius: 22px;
+    padding: 5px;
+    width: 90%;
+    position: relative;
+
+}
+
+.no-underline {
+    text-decoration: none;
+    color: black;
+}
